@@ -1,0 +1,19 @@
+ThreadPoolExecutor is an ExecutorService to execute each
+ submitted task using one of possibly several pooled threads, normally configured 
+ using Executors factory methods. It also provides various utility methods to check 
+ current threads statistics and control them. 
+ its belongs to java.util.concurrent.
+ 
+
+example:-.
+`Suppose we have multiple task like
+printJob[] job={
+new PrintJob("Ram"),->task 1
+new PrintJob("Ram"),->task 2
+new PrintJob("Ram"),->task 3
+new PrintJob("Ram"),->task 4
+new PrintJob("Ram"),->task 5
+}
+herefor executing five task we need to creat five Thread but  using  Thread pool if we want to run all this
+tast on single thred then we can make it by using Thread pool;
+so here single thread perform multiple task so here performance is also increase.
